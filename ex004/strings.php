@@ -19,10 +19,24 @@
     
         // echo "Estamos no ano de " . date('Y');
 
-        $nome = "Gustavo";
-        $sobrenome = "Guanabara";
-        $apelido = "Gafanhoto";
-        echo "$nome \"$apelido\" $sobrenome";
+        // $nome = "Gustavo";
+        // $sobrenome = "Guanabara";
+        // $apelido = "Gafanhoto";
+        // echo "$nome \"$apelido\" $sobrenome";
+
+
+        //Heredoc são sem aspas tipo este abaixo (TESTE)
+        
+        // $canal = "Curso em Video";
+        // $ano = date('Y');
+        // echo <<< TESTE
+        //     Olá galera do $canal!
+        //         Tudo bem com vocês?
+        //       Como está sneod esse ano de $ano?
+        //     Abraços!
+        // TESTE;
+
+        //Nowdoc estão para aspas simples
     ?>
 </body>
 </html>
