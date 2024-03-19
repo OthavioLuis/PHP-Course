@@ -17,7 +17,12 @@
         // const CANAL = "Curso em Video";
         // echo "Eu adoro o ". CANAL;
     
-        echo "Estamos no ano de " . date('Y');
+        // echo "Estamos no ano de " . date('Y');
+
+        $nome = "Gustavo";
+        $sobrenome = "Guanabara";
+        $apelido = "Gafanhoto";
+        echo "$nome \"$apelido\" $sobrenome";
     ?>
 </body>
 </html>
