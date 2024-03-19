@@ -27,6 +27,16 @@
     // $num = (float) "950"; //caso queira mudar, (digite o tipo que vc quer que vire a variável)
     // var_dump($num);
 
+    // $vet = [6,2,9,5];
+    // var_dump($vet);
+
+    // class Pessoa {
+    //     private string $nome;
+    // }
+
+    // $p = new Pessoa;
+    // var_dump($p);
+
     ?>
 </body>
 </html>
