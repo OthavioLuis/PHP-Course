@@ -12,8 +12,9 @@
         <?php 
             $valor = $_GET["valor"];
             $conversor = $valor / 5.22;
-            $conversor = number_format($conversor, 2, ',', '.');
-            echo "<p>Seus R$ $valor equivalem a <strong>US $ $conversor</strong></p>"
+            //$conversor = number_format($conversor, 2, ',', '.');
+            $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
+            echo "<p>Seus " . numfmt_format_currency($padrao, $valor, "BRL") ." equivalem a <strong>" . numfmt_format_currency($padrao, $conversor, "USD") ."</strong></p>"
         ?>
         <p><strong>Cotação fixa de 5,22</strong> informada diretamente no código</p>
         <a href="javascript:history.go(-1)">
