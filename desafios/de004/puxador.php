@@ -8,23 +8,20 @@
 </head>
 <body>
     <main>
-        <h1>Conversor de Moedas v2.0</h1>
+        <h1>Conversor de Moedas v1.0</h1>
         <?php 
+
             $inicio = date("m-d-Y");
             $fim = date("m-d-Y");
             $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\''. $inicio .'\'&@dataFinalCotacao=\''. $fim .'\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
 
             $dados = json_decode(file_get_contents($url), true);
 
-            
+            var_dump($dados);
+
             $cotação = $dados["value"][0]["cotacaoCompra"];
-            $valor = $_GET["valor"] ?? 0;
 
-            $dolar = $valor / $cotação;
-
-            //$conversor = number_format($conversor, 2, ',', '.');
-            $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
-            echo "<p>Seus " . numfmt_format_currency($padrao, $valor, "BRL") ." equivalem a <strong>" . numfmt_format_currency($padrao, $dolar, "USD") ."</strong></p>"
+            echo "A cotação foi $cotação";
         ?>
         <a href="javascript:history.go(-1)">
             <input type="button" value="Voltar">
