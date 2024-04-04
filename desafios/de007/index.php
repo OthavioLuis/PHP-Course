@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php 
-        //Capturando os dados do formulário Retroalimentado
+    <?php
         $valor1 = $_GET['v1'] ?? 0;
         $salario = 1380;
     ?>

@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php 
-        //Capturando os dados do formulário Retroalimentado
+    <?php
         $dividendo = $_GET['v1'] ?? 0;
         $divisor = $_GET['v2'] ?? 0;
         $resultado = $dividendo / $divisor;
