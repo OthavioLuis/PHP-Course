@@ -17,7 +17,7 @@
             <label for="v1">Salário (R$)</label>
             <input type="number" name="v1" id="v1" value="<?=$valor1?>" step="0.01">
             <p>Considerando o salário mínimo de <strong>R$1.380,00</strong></p>
-            <input type="submit" value="Somar">
+            <input type="submit" value="Enviar">
         </form>
     </main>
 

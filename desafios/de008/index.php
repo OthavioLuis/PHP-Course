@@ -22,8 +22,10 @@
     <section id="resultado">
         <h2>Resultado Final</h2>
         <?php
-            $quadrada = sqrt($valor);
-            $cubica = pow($valor, 1.0/3.0);
+            $quadrada = $valor ** (1/2);
+            //$quadrada = sqrt($valor);
+            $cubica = $valor ** (1/3); //Tem esta forma e a de baixo para calcular uma raiz cúbica
+            //$cubica = pow($valor, 1.0/3.0);
 
             echo "<p>Analisando o <strong>número $valor</strong>, temos:</p>";
             echo "<ul><li>A sua raiz quadrada é <strong>". number_format($quadrada, 3, ",", ".") ."</strong></li>";
