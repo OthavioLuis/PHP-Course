@@ -12,16 +12,16 @@
         $resto = $total_segundos;
 
         $semana = (int)($resto / 604_800);
-        $resto = $resto % 604_800;
+        $resto %= 604_800;
         //total de semanas acima
         $dia = (int)($resto / 86_400);
-        $resto = $resto % 86_400;
+        $resto %= 86_400;
         //total de dias acima
         $hora = (int)($resto / 3_600);
-        $resto = $resto % 3_600;
+        $resto %= 3_600;
         //total de horas
         $minuto = (int)($resto / 60);
-        $resto = $resto % 60;
+        $resto %= 60;
         //total de minutos
         $segundo = $resto;
     ?>
